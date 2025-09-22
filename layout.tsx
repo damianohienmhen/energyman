@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 "use client";
 
 import React, { useState } from "react";
@@ -63,4 +61,3 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </html>
   );
 }
->>>>>>> parent of c84ffc2 (Seperated local host 4000 & 3000, no authentication added yet)
