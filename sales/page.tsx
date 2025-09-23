@@ -34,7 +34,7 @@ export default function BasicTable() {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.get("http://localhost:3000/energysales");
+      const response = await axios.get("http://localhost:4000/energysales");
 
       const formattedData = response.data.energysold.map((item: any) => ({
         id: item.id,
