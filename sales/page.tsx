@@ -12,7 +12,8 @@ import {
 import axios from "axios";
 import TotalCostChart from "../components/TotalCostChart.jsx";
 import EnergySalesTable from "../components/EnergySalesTable.jsx";
-import Weather from "../components/weather.jsx"
+import DistChart from "../components/piechart.jsx"
+
 
 interface RowData {
   id: number;
@@ -85,11 +86,9 @@ export default function BasicTable() {
           <Card sx={{ height: "100%" }}>
             <CardContent>
               <Typography align="center" variant="h6" gutterBottom>
-                Installed Solar Panel Capacity
+                Energy Sales - Generation Distribution
               </Typography>
-              <Typography>
-                This is the second card below the Energy Sales Cost chart.
-              </Typography>
+              <DistChart/>
             </CardContent>
           </Card>
         </Grid>

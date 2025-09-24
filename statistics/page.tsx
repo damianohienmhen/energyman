@@ -2,15 +2,21 @@
 
 import * as React from "react";
 import { useEffect, useState } from "react";
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Grid
+} from "@mui/material";
 import axios from "axios";
 import TotalCostChart from "../components/TotalCostChart.jsx";
 import EnergySalesTable from "../components/EnergySalesTable.jsx";
 import Weather from "../components/weather.jsx";
+import Gauge from "../components/gauge.jsx";
+import Icongrid from "../components/icongrid.jsx";
+import AccentIcon from "../components/accenticon.jsx";
+import Budget from "../components/budget.jsx"
 
 interface RowData {
   id: number;
@@ -29,7 +35,7 @@ export default function BasicTable() {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.get("http://localhost:3000/energysales");
+      const response = await axios.get("http://localhost:4000/energysales");
 
       const formattedData = response.data.energysold.map((item: any) => ({
         id: item.id,
@@ -54,50 +60,18 @@ export default function BasicTable() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <Grid container spacing={20}>
+      <Grid container spacing={2}>
         {/* Left side: 4 cards in 2 rows (2 per row) */}
         <Grid item xs={12} md={8}>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} sx={{ pb: 3}}>
             {/* Row 1: Cards 1 and 2 */}
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">Card 1</Typography>
-                  <Typography>This is card 1 content.</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">Card 2</Typography>
-                  <Typography>This is card 2 content.</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+                <AccentIcon/>
             </Grid>
             <Grid>
             {/* Row 2: Cards 3 and 4 */}
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ pb: 3}}>
             {/* Row 1: Cards 1 and 2 */}
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">Card 3</Typography>
-                  <Typography>This is card 3 content.</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant="h6">Card 4</Typography>
-                  <Typography>This is card 4 content.</Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+                <Budget/>
             </Grid>
            
           </Grid>
