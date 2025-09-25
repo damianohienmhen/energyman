@@ -58,7 +58,7 @@ export default function AuthProvider({ children }) {
         navigation={NAVIGATION}
         branding={{
         title: "Grid",
-        logo: <img src="/leaf.png" alt="Logo" style={{ height: 32 }} />, // ✅ Logo here
+        logo: <img src="/engineer.jpg" alt="Logo" style={{ height: 32 }} />, // ✅ Logo here
         }}
         >
       <AppBar position="static">
