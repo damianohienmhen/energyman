@@ -1,6 +1,6 @@
 import React from "react";
 import type { ReactNode } from "react";
-import AuthProvider from "/Users/damianohienmhen/Downloads/energi/app/components/AuthProvider.jsx"; // client component for nav + login/logout
+import AuthProvider from "./components/AuthProvider.jsx"; // client component for nav + login/logout
 
 interface RootLayoutProps {
   children: ReactNode;

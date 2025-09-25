@@ -129,7 +129,7 @@ export default function Page() {
       >
         <CardMedia
           component="img"
-          image="/solarpanelaff.png"
+          image="/solarfarm.jpg"
           alt="Solar Panel Layout"
           sx={{
             height: 400,

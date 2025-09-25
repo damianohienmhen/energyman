@@ -59,7 +59,7 @@ const EnergySalesTable = () => {
   };
 
   return (
-    <Paper sx={{ width: 400, overflow: "hidden" }}>
+    <Paper sx={{ width: 450, overflow: "hidden" }}>
       <TableContainer sx={{ width: '80%', margin: 'auto' }}>
         <Table aria-label="energy sales table">
           <TableHead>

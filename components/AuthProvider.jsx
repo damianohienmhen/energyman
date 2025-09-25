@@ -53,7 +53,14 @@ export default function AuthProvider({ children }) {
   if (!user) return <CredentialsSignInPage onSuccess={handleAuthSuccess} />;
 
   return (
-    <AppProvider theme={theme} navigation={NAVIGATION} branding={{ title: "Grid" }}>
+    <AppProvider
+        theme={theme}
+        navigation={NAVIGATION}
+        branding={{
+        title: "Grid",
+        logo: <img src="/leaf.png" alt="Logo" style={{ height: 32 }} />, // ✅ Logo here
+        }}
+        >
       <AppBar position="static">
         <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
           <Typography variant="h6">Dashboard</Typography>

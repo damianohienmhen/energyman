@@ -10,11 +10,7 @@ import {
   Grid
 } from "@mui/material";
 import axios from "axios";
-import TotalCostChart from "../components/TotalCostChart.jsx";
-import EnergySalesTable from "../components/EnergySalesTable.jsx";
 import Weather from "../components/weather.jsx";
-import Gauge from "../components/gauge.jsx";
-import Icongrid from "../components/icongrid.jsx";
 import AccentIcon from "../components/accenticon.jsx";
 import Budget from "../components/budget.jsx"
 

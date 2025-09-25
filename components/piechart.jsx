@@ -87,7 +87,7 @@ import {
       return `${(percent * 100).toFixed(0)}%`;
     };
     return (
-      <Card sx={{ width: 400}}>
+      <Card sx={{ width: 450}}>
         <Box
           p={{
             xs: 2,

@@ -23,6 +23,7 @@ import { addDays, format } from 'date-fns';
 import { buildStyles, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import { useTranslation } from 'react-i18next';
 import { ButtonLight } from './base/styles/button';
+import Image from "next/image";
 
 const WeatherBox = styled(Card)(() => ({
   background: 'linear-gradient(100.66deg, #434343 6.56%, #000000 93.57%) !important',
